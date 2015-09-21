@@ -21,9 +21,9 @@ ALERT = {
         show:function(word,status,callbackFun){
                 if(status =="success"){
                     $("#common-alert-box").find(".ts-tips").addClass("success-tips");
-                }else if(status ==2){
+                }else if(status =="error"){
                     $("#common-alert-box").find(".ts-tips").addClass("error-tips");    
-                }else if(status == 3){
+                }else if(status == "warn"){
                     $("#common-alert-box").find(".ts-tips").addClass("warn-tips");    
                 }else{
                     $("#common-alert-box").find(".ts-tips").addClass("success-tips");
